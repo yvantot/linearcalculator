@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>🧮 Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="calc-head">
+        <h1>Linear Calculator</h1>
+        <div class="calc-logo" style="font-family: sans-serif">
+          <span>x</span>
+          <span>-</span>
+          <span>+</span>
+          <span>÷</span>
+        </div>
+      </div>
+      <div class="calc-screen">
+        <p id="num-operation"></p>
+        <p id="screen-text"></p>
+      </div>
+      <p id="information">
+        This calculator is literally linear because it doesn't give a shit about
+        PEMDAS
+      </p>
+      <div class="calc-keys">
+        <div class="number">
+          <button onclick="one()">1</button>
+          <button onclick="two()">2</button>
+          <button onclick="three()">3</button>
+          <button onclick="four()">4</button>
+          <button onclick="five()">5</button>
+          <button onclick="six()">6</button>
+          <button onclick="seven()">7</button>
+          <button onclick="eight()">8</button>
+          <button onclick="nine()">9</button>
+          <button onclick="zero()">0</button>
+          <button onclick="equal()">=</button>
+        </div>
+        <div class="operation">
+          <button onclick="reset2()">~</button>
+          <button onclick="remove()">&lt;</button>
+          <button onclick="point()">.</button>
+
+          <button onclick="add()">+</button>
+          <button onclick="sub()">-</button>
+          <button onclick="mul()">*</button>
+          <button onclick="div()">/</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
